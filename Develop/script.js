@@ -31,6 +31,10 @@ function writePassword() {
   //alert the user to how many characters selected
     alert("Your password will contain ${confirmLength} characters.");
   // determine parameters
+var confirmSpecialCharacter = confirm("Click OK if you'd like this password to include special characters.");
+var confirmNumericCharacter = confirm("Click OK if you'd like this password to include numeric characters.");
+var confirmLowerCase = confirm("Click OK if you'd like this password to include lower case characters.");
+var confirmUpperCase = confirm("Click OK if you'd like this password to include Upper Case Characters.");
 
   
   var password = generatePassword();
